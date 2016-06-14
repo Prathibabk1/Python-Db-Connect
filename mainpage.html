@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My App!</title>
+  </head>
+  <body>
+    <body>
+      <table style="border: 1px solid black">
+        <tbody>
+          <tr>
+            <th style="background-color: #CCFFCC; margin: 5px">Week</th>
+            <th style="background-color: #CCFFCC; margin: 5px">Between 2&3</th>
+            <th style="background-color: #CCFFCC; margin: 5px">Between 3&4</th>
+			<th style="background-color: #CCFFCC; margin: 5px">Between 4&5</th>
+			<th style="background-color: #CCFFCC; margin: 5px">Greater than 5</th>
+          </tr>
+          {% for guest in guestlist %}
+             <tr>
+               <td>{{ guest['Week'] }}</td>
+               <td>{{ guest['Between 2&3'] }}</td>
+               <td>{{ guest['Between 3&4'] }}</td>
+			   <td>{{ guest['Between 4&5'] }}</td>
+			   <td>{{ guest['Greater than 5'] }}</td>
+             </tr>
+          {% endfor %}
+        </tbody>
+      </table>     
+  </body>
+</html>
